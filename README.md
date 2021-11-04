@@ -1,2 +1,2 @@
-# sublime_text_channel
-sublime text channel自动同步
+# Package Control channel 自动同步
+每6个小时同步一次 [https://packagecontrol.io/channel_v3.json](https://packagecontrol.io/channel_v3.json)
