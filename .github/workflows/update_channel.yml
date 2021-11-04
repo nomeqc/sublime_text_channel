@@ -6,7 +6,7 @@ name: Update channel
 on:
   # Triggers the workflow on push or pull request events but only for the main branch
   schedule:
-    - cron: '0 */6 * * *'
+    - cron: '21 4,10,16,22 * * *' # cron表达式，Actions时区是UTC时间，所以要往前推8个小时
 
   # Allows you to run this workflow manually from the Actions tab
   workflow_dispatch:
@@ -25,7 +25,9 @@ jobs:
 
       # Runs a single command using the runners shell
       - name: Fetch channel update.
-        run:  curl -o channel_v3.json https://packagecontrol.io/channel_v3.json
+        run: |
+          curl -o channel_v3.json https://packagecontrol.io/channel_v3.json
+          echo $(TZ=Asia/Shanghai date "+%Y-%m-%d %H:%M:%S") > last_update.txt
 
       # Runs a set of commands using the runners shell
       - name: Push changes
