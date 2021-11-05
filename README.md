@@ -1,2 +1,2 @@
 # Package Control channel 自动同步
-每6个小时同步一次 [https://packagecontrol.io/channel_v3.json](https://packagecontrol.io/channel_v3.json)
+每6个小时同步一次 [https://packagecontrol.io/channel_v3.json](https://packagecontrol.io/channel_v3.json)到本仓库。
