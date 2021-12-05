@@ -6,7 +6,7 @@ name: Update channel
 on:
   # Triggers the workflow on push or pull request events but only for the main branch
   schedule:
-    - cron: '21 4,10,16,22 * * *' # cron表达式，Actions时区是UTC时间，所以要往前推8个小时,选择第21分钟，避开高峰
+    - cron: '0 4,10,16,22 * * *' # cron表达式，Actions时区是UTC时间，所以要往前推8个小时
 
   # Allows you to run this workflow manually from the Actions tab
   workflow_dispatch:
