@@ -28,7 +28,7 @@ jobs:
         run: |
           curl -o channel_v3.json https://packagecontrol.io/channel_v3.json
           echo "# Package Control channel 自动同步" > README.md
-          echo "每6个小时同步一次 [https://packagecontrol.io/channel_v3.json](https://packagecontrol.io/channel_v3.json) 到本仓库。" >> README.md
+          echo "每12个小时同步一次 [https://packagecontrol.io/channel_v3.json](https://packagecontrol.io/channel_v3.json) 到本仓库。" >> README.md
           echo "" >> README.md
           echo "**最后更新时间：$(TZ=Asia/Shanghai date "+%Y-%m-%d %H:%M:%S")**" >> README.md
 
